@@ -2,19 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // create component with Pascal case convention
-function Heading() {
-  return <h1>My favorite foods</h1>;
-}
+//move it to Heading.jsx  then import it
+// function Heading() {
+//   return <h1>My favorite foods</h1>;
+// }
 
-ReactDOM.render(
-  <div>
-    {/* javascript reads tags in pascal case as JS */}
-    <Heading></Heading>
-    <ul>
-      <li>Bacon</li>
-      <li>Jamon</li>
-      <li>Noodles</li>
-    </ul>
-  </div>,
-  document.getElementById("root")
-);
+// import Heading from "./Heading.jsx";
+// //extension optional
+
+// import List from "./List.jsx";
+
+// ReactDOM.render(
+//   <div>
+//     {/* javascript reads tags in pascal case as JS */}
+//     {/* <Heading></Heading> */}
+//     {/* javascript convention uses self closing tabs */}
+//     <Heading />
+//     <List />
+//   </div>,
+//   document.getElementById("root")
+// );
+
+// index.js usually only renders the app function contained in app.jsx
+//created App.jsx
+import App from "./App";
+ReactDOM.render(<App />, document.getElementById("root"));
